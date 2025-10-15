@@ -1,0 +1,85 @@
+package com.klef.cicd.lab.entity;
+
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "clothes_table")
+public class Clothes {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+
+    private String clothName;     // e.g., T-Shirt, Jeans
+    private String clothType;     // e.g., Men, Women, Kids
+    private String size;          // e.g., S, M, L, XL
+    private double price;
+    private String color;
+    private int stock;
+    private String imageUrl;      // optional image link
+    private String description;
+
+    // --- Getters & Setters ---
+    public int getId() {
+        return id;
+    }
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getClothName() {
+        return clothName;
+    }
+    public void setClothName(String clothName) {
+        this.clothName = clothName;
+    }
+
+    public String getClothType() {
+        return clothType;
+    }
+    public void setClothType(String clothType) {
+        this.clothType = clothType;
+    }
+
+    public String getSize() {
+        return size;
+    }
+    public void setSize(String size) {
+        this.size = size;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public String getColor() {
+        return color;
+    }
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public int getStock() {
+        return stock;
+    }
+    public void setStock(int stock) {
+        this.stock = stock;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+    public void setDescription(String description) {
+        this.description = description;
+    }
+}
