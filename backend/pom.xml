@@ -59,7 +59,7 @@
 	</dependencies>
 
 	<build>
-	<finalname>jenkinslabexam</finalname>
+	<finalName>jenkinslabexam</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
